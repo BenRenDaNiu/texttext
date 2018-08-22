@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+<fieldset>
+    <form action="/test/reg" method="post" >
+        手机号
+        <input type="test" name="account">
+        <br/>
+        密码
+        <input type="password" name="pswd">
+        <br/>
+        <input type="submit" value="注册">
+        <!--<input type="submit" value="注册" onclick="ajax()">-->
+        <div id="taglist"></div>
+    </form>
+</fieldset>
+<hr/>
+</body>
+</html>
+<script type="text/javascript">
+  /*  function asyncRequest() {
+        var httpRequest =new XMLHttpRequest;
+        httpRequest.open("GET","http://localhost:8080/RegUsers.html")
+        if(httpRequest.readyState==4 && httpRequest.status==200){
+            var responseText=httpRequest.responseText;
+            document.getElementById('taglist').innerHTML=responseText;
+            console.log(httpRequest.getAllResponseHeaders());
+            if(responseText="注册成功"){
+                alert("注册成功")
+            }
+        }
+        httpRequest.send();
+    }
+    function ajax () {
+        //     alert("注册成功");
+        var a=1000;
+        document.logs(a);
+        var url="http://localhost:8080/RegUsers.html";
+        var req=new XMLHttpRequest();
+        req.overrideMimeType("application/json");
+        req.open("GET",url,true);
+        req.onload=function () {
+            var jsonResponse=JSON.parse(req.responseText);
+            document.getElementById("taglist").innerHTML=jsonResponse.message;
+            if(jsonResponse.equals(Success)){
+                alert("注册成功")
+            }
+        };
+        req.send();
+    }*/
+</script>
+
